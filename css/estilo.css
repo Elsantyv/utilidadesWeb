@@ -20,25 +20,75 @@ img{/*Las imagenes toman todo el tamaño disponible, asi nos ahorramos codigo re
 
 }
 
+body{
+
+    background-color: #151515;
+
+}
+
 /*Generales*/
 
 /***********/
 
 /*Header*/
 
+.header{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    color: #04FE9B;
+
+}
+
+.sociales ul{
+
+    list-style:none;
+    display: flex;
+    
+
+}
+
+ul li a{
+
+    justify-content: space-between;
+    margin-right: 1rem;
+    font-size: 2rem;
+    color: #04FE9B;
+
+}
+
+
+/********/
+
+/*Main*/
+
 main h1{
 
     text-align: center;
+    font-size: 3rem;
+    color: #04FE9B;
 
 }
 
 .favoritos .web{
 
     text-align: center;
-    -webkit-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 6px 19px 0px rgba(4,254,155,0.6);
+    -moz-box-shadow: 0px 6px 19px 0px rgba(4,254,155,0.6);
+    box-shadow: 0px 6px 19px 0px rgba(4,254,155,0.6);
     padding: 1rem;
+    background-color:WHITE;
+    color: #151515;
+
+}
+
+.favoritos{
+
+    display: grid;/*Habilitamos el grid*/
+    grid-gap: 1rem;
 
 }
 
@@ -46,9 +96,7 @@ main h1{
 
     .favoritos{
 
-        display: grid;/*Habilitamos el grid*/
         grid-template-columns: repeat(3, 1fr);/*Acomodamos los elementos hijos en columnas de a 3*/
-        grid-gap: 1rem;
 
     }
 
@@ -137,12 +185,17 @@ main h1{
     }
 
 }
-/********/
-
-/*Main*/
 
 /******/
 
 /*Footer*/
+
+footer p{
+
+    color: #04FE9B; 
+    padding: 2rem 0;
+    text-align: center;
+
+}
 
 /********/
